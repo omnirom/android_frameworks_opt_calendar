@@ -492,7 +492,7 @@ public class Time {
         return generateInstance().format3339(allDay);
     }
 
-    private android.text.format.Time generateInstance() {
+    public android.text.format.Time generateInstance() {
         android.text.format.Time tmp = new android.text.format.Time(timezone);
         tmp.set(second, minute, hour, monthDay, month, year);
 
@@ -513,7 +513,7 @@ public class Time {
         return tmp;
     }
 
-    private void copyAndWriteInstance(android.text.format.Time time) {
+    public void copyAndWriteInstance(android.text.format.Time time) {
         year = time.year;
         month = time.month;
         monthDay = time.monthDay;
